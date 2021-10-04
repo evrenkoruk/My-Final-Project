@@ -1,0 +1,1036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27CC0837-19FD-4CD6-8ECC-6E8A6C4A10E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test</RootNamespace>
+    <AssemblyName>test</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concrete2\Senturkler\STOK_Karti.cs" />
+    <Compile Include="Concrete\AKTS_DemoBank_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_DemoMusteri_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Eleman.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Fatura.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Gruplar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Not.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Prim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Promosyon_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Satc_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Satis.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_SatisTipleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Satis_Urunler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Servis_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Stok_Hareket.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Stok_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Stok_Parca_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_Urun_Parca_Degisim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\AKTS_YP_Servis.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BANK_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BANK_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BANK_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Belge_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Birim_Kodlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_AylikSigortaParametresi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_Bolum_Hareket.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_Bolum_Tanitim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_DonemBolumParametresi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_DonemKanuniParametresi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_EksikGunTanimlama.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_ENT_Thk_Fisleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_Es_Cocuklar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_FesihKodlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_GelirKesintiIndirim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_OzelKesinti_Bildirim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_PersonelBilgileri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_Personel_Grup_Tanitimi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_PuantajBilgileri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_PuantajGelKesIndBilgileri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_Puantaj_Cetveli.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_SigortaBilgileri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_TahakkukBilgileri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_Tahakkuk_Grup.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_VergiIadesi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BRD_ViziteBilgileri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Alis_Miktari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Alis_Sartlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Gider_Miktarlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Gider_Parametre.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Parametre.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Personel_Giderleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Satis_Miktari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Satis_Sartlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Uret_Recete.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\BTC_Uret_Recete_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Adresler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Aktiviteler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Bankalar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Bolgeler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Fisler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Gruplar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Islemler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Kimlik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Cari_Mutabakat.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Notlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_OzelKodlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Stok_Tedarik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Teminatlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Toplam.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CARI_Yetkililer.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Fis_Kalem_Cek.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Fis_Kalem_Senet.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Har_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Har_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Parcali.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\CKSN_Pozisyon.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Concrete.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Concrete.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Concrete.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Concrete.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Concrete.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\C_SIRK_Ciro_Primi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\DGER_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\DOVZ_Kurlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\DOVZ_Tanim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ENT_Kodlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Etiket_Basim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Fason_Islemler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FATR_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FATR_FFarki_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FATR_Fisler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FATR_GeriDonusler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FATR_Irsaliye.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FATR_Odeme_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Fis_Tipleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FIYT_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\FIYT_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\HIZM_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\HIZM_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\HIZM_Referans1.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\HIZM_Referans2.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\IKAZ_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\IRSL_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\IRSL_Fatura_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ITH_Sevkiyat.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ITH_Sozlesme.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ITH_Sozlesme_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ITH_Sozlesme_Kalem_Sevk.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KAMP_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KAMP_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KASA_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KASA_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KASA_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Kdv_Istisna_Kodlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Kdv_Oranlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KKART_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KKART_Fis_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KKART_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KKART_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Departman.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Fatura.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_KASA_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_KASA_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasa_Islem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasa_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasa_Odemeleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasa_Odeme_Param.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasa_Plu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasa_ZDetay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasiyer_Islem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Kasiyer_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Terazi_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KPOS_Terazi_Plu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KRD_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KREDI_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KREDI_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KREDI_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\KREDI_Taksit.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MASR_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MASR_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MASR_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Mesai_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Belge_Tipleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Bilanco_Kayit.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Birim_Tanimlama.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Donem_Parametreleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_DOVZ_Kurlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Fis_Baslik_Kutugu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Fis_Hareket_Kutugu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_GecmisDonem_Kutugu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Genel_Parametreler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Gider_Cesitleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Gider_Yerleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Hesap_Plan_Tanitimi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Hesap_Toplam_Kutugu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_HesKodu_GiderYer_Tab.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Kasa_Parametreleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_KDV_Aylik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_KDV_Hesap_Tanitimi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Onceki_Donem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Onceki_Donem_Tablo.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Sablon_Baslik_Kutugu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Sablon_Hareket_Kutugu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Sicil_Bilgi_Girisi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Tablo_Kayit.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Tablo_Tanitimi_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Tablo_Tanitimi_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Tablo_Tanitimi_Detay1.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUH_Yansitma_Tablosu.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Cocuklar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_GRUP.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_IADE_Taksit.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Kasiyer.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Kefiller.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Kimlik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_K_Kartlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_OnOdeme.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_OZEL.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Puan.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Satici.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Saticilar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Satis.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Tahsilat.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Taksit.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MUST_Tercihler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\MYERI_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NAKS_Odemeler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NAKT_Plan_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NAKT_Plan_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PARAMETRELER.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PDA_Islemler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PERS_Degerleme_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PERS_Degerleme_Cevap_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PERS_Degerleme_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PERS_Degerleme_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pers_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pers_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pers_Gunluk_Puantaj.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pers_Hesaplar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pers_Kartli_Girisler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pers_Mesai_Gruplari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PLAN_OdemePlanlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PLAN_Satis_Fis.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PLAN_Satis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pos_Promosyon_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pos_Promosyon_Bilgileri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pos_Promosyon_Gunluk.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Pos_Promosyon_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Prog_Log_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PROG_Tipler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PROM_Iskontolar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PSAT_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PSAT_Fis_Odeme.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\PSAT_Fis_Satis.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SATC_Bolge.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SATC_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SATC_Mudur.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Satici_Root.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Satici_Root_Iliski.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Satici_Ziyaret.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Satis_Hedef.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Satis_Tutar_Hedef.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SAYM_BIRLESIK_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SAYM_BIRLESIK_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SAYM_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SAYM_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIPR_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIPR_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIPR_Fis_Kalem_DD.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIPR_Fis_Teslim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIRK_Aktivite.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIRK_Ciro_Primi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIRK_Iskontolar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SIRK_Sozlesmeler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Amortismanlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Gruplar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Islemler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_OzelKodlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Tipler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_Ureticiler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\SKYM_VUK_Listesi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Aylik_Maliyet.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_BagliStoklar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Barkod.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Birim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Birim_Fiyat.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Deg_Fiyat.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Departman.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Depozito_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Depozito_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Digerleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Esdeger.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Etiket_Basim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_FirmaStokKodlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Fis_Kalem_Seri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Stok_Fis_Kalem_Tarim.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Fiyat.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Fiyat_Hareket.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Fiyat_Promosyon.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Gruplar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Hizmetler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Karti_D.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Karti_R.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_KulYeri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Maliyet.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Masraflar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Masraf_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Masraf_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Muhasebe.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_MuhKodlari.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Notlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_OzelKodlar.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Promosyon_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Promosyon_Karti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Sektorler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Sirkuler_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Sirkuler_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Toplam.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\STOK_Ureticiler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\TKLF_Fis_Baslik.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\TKLF_Fis_Kalem.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\T_Cari_GunlukToplam.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\T_Stok_GunlukToplam.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Degiskenler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Donem_Parametreleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Eleman.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Gun_Parametreleri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_IsEmri_Plan.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_IsEmri_Plan_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Is_Emri.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Mamul.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Mamul_Fisi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Masraf_Fisi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Parti.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Recete.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Recete_Detay.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Recete_Subeler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\URET_Sarf_Fisi.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\VERG_KDVler.cs">
+      <DependentUpon>Concrete.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{4964e9b9-cb1b-4eb7-bc43-a20ec7450f52}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Concrete\Concrete.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Concrete.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Concrete\Concrete.edmx.diagram">
+      <DependentUpon>Concrete.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Concrete\Concrete.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Concrete.Context.cs</LastGenOutput>
+      <DependentUpon>Concrete.edmx</DependentUpon>
+    </Content>
+    <Content Include="Concrete\Concrete.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Concrete.edmx</DependentUpon>
+      <LastGenOutput>Concrete.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
